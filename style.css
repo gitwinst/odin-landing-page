@@ -1,10 +1,10 @@
 :root {
-    --bg-color-dark: #1f2937;
+    --bg-color-dark: #041c40;
     --bg-color-light: #f9faf8;
     --bg-color-quote: #e5e7eb;
     --text-color-heading-main: #f9faf8;
     --text-color-heading-secondary: #e5e7eb;
-    --text-color-dark: #1f2937;
+    --text-color-dark: #041c40;
     --attention-color: #3882f6;
     --outer-gutter: 1020px;
     --inner-gutter: 800px;
@@ -111,6 +111,7 @@ nav > ul a {
 
 .hero-img img {
     width: 100%;
+    border-radius: 16px;
 }
 
 button {
@@ -118,6 +119,17 @@ button {
     border-radius: 8px;
     padding: 8px 30px;
     font-weight: 700;
+    transition: background-color .1s ease-out;
+}
+
+.hero-cta button:hover,
+.banner-content button:hover {
+    background-color: #3273DB;
+}
+
+.hero-cta button:active,
+.banner-content button:active {
+    background-color: #2A5FB5;
 }
 
 .hero-cta button {
